@@ -46,9 +46,11 @@ $(document).ready(function() {
 
     $('.js-open-catalog').hover(() => onMenu('.header__catalog', '.header__search'))
     $('.header__catalog').hover(() => 0, () => offMenu('.header__catalog', '.header__search'))
+    $('.header__link:not(.js-open-catalog)').hover(() => offMenu('.header__catalog'));
 
     $('.js-open-search').hover(() => onMenu('.header__search', '.header__catalog'))
     $('.header__search').hover(() => 0, () => offMenu('.header__search', '.header__catalog'))
+    $('.header__link:not(.js-open-search)').hover(() => offMenu('.header__search'));
 })
 
 let onMenu = (className, secondClassName) => {

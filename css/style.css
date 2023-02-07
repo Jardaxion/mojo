@@ -499,7 +499,7 @@ input::placeholder
 .header__catalog
 {
     position: absolute;
-    top: 116px;
+    top: 83px;
     left: 0;
     z-index: 2;
 
@@ -612,7 +612,7 @@ input::placeholder
 
 .header__search{
     position: absolute;
-    top: 116px;
+    top: 83px;
     left: 0;
     z-index: 2;
 
