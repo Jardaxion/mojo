@@ -26,7 +26,7 @@
     <div class="right">
       <div class="right__top">
         <div class="right__line">
-          <p class="right__title">аккаунт</p><a class="right__ex" href="index.html">
+          <p class="right__title">корзина (7)</p><a class="right__ex" href="index.html">
             <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1 19L10 10L0.999999 1" stroke="#5B5B5B"></path>
               <path d="M19 1L10 10L19 19" stroke="#5B5B5B"></path>
@@ -35,13 +35,67 @@
         <hr class="right__hr">
       </div>
       <div class="right__bottom">
-        <p class="right__bigTitle">подтвердите профиль</p>
-        <form class="right__form" action="">
-          <input class="right__input" type="text" placeholder="ваше имя">
-          <input class="right__input" type="text" placeholder="телефон">
-          <input class="right__input" type="text" placeholder="email">
-          <button class="right__button">отправить</button>
-          <p class="right__smallText">Подписываясь на рассылку, Вы соглашаетесь c условиями политики конфиденциальности.</p>
+        <p class="right__bigTitle">оформление заказа</p>
+        <form action="" class="basketBuy__form">
+            <input type="text" class="basket__input" placeholder="ваше имя">
+            <input type="text" class="basket__input" placeholder="телефон">
+            <input type="text" class="basket__input" placeholder="email">
+            <input type="text" class="basket__input" placeholder="населенный пункт">
+            <div class="basket__checkboxs">
+                <p class="basket__leftText">способ доставки</p>
+                <div class="basket__right">
+                    <div class="basket__checkbox-line">
+                        <input type="radio" name="dostav" id="kur">
+                        <label for="kur" class="basket__checkbox-label"></label>
+                        <p class="basket__checkbox-text">Крьером
+                            <br><br>
+                            sed do eiusmod tempor incididunt ut labore et.</p>
+                    </div>
+                    <div class="basket__checkbox-line">
+                        <input type="radio" name="dostav" id="sam">
+                        <label for="sam" class="basket__checkbox-label"></label>
+                        <p class="basket__checkbox-text">Самовывоз</p>
+                    </div>
+                </div>
+            </div>
+            <input type="text" class="basket__input" placeholder="улица">
+            <div class="basket__doubleInput">
+                <input type="text" class="basket__input" placeholder="дом">
+                <input type="text" class="basket__input" placeholder="квартира / офис">
+            </div>
+            <div class="basket__checkboxs">
+                <p class="basket__leftText">способ оплаты</p>
+                <div class="basket__right">
+                    <div class="basket__checkbox-line">
+                        <input type="radio" name="oplat" id="bank">
+                        <label for="bank" class="basket__checkbox-label"></label>
+                        <p class="basket__checkbox-text">Банковской картой</p>
+                    </div>
+                    <div class="basket__checkbox-line">
+                        <input type="radio" name="oplat" id="bankPol">
+                        <label for="bankPol" class="basket__checkbox-label"></label>
+                        <p class="basket__checkbox-text">Картой при получении</p>
+                    </div>
+                    <div class="basket__checkbox-line">
+                        <input type="radio" name="oplat" id="nal">
+                        <label for="nal" class="basket__checkbox-label"></label>
+                        <p class="basket__checkbox-text">Наличными при получении</p>
+                    </div>
+                </div>
+            </div>
+            <input type="text" class="basket__input" placeholder="комментарий">
+            <div class="basket__miniBox">
+                <div class="buy__line">
+                    <p class="basket__miniText">доставка:</p>
+                    <p class="basket__miniText">157;</p>
+                </div>
+                <div class="buy__line bigM">
+                    <p class="basket__miniText">итого:</p>
+                    <p class="basket__miniText">1657;</p>
+                </div>
+                <a href="" class="basket__button">оформить заказ</a>
+                <p class="right__smallText">Подписываясь на рассылку, Вы соглашаетесь c условиями политики конфиденциальности.</p>
+            </div>
         </form>
       </div>
     </div>

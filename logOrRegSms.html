@@ -35,13 +35,15 @@
         <hr class="right__hr">
       </div>
       <div class="right__bottom">
-        <p class="right__bigTitle">подтвердите профиль</p>
+        <p class="right__bigTitle">введите код</p>
         <form class="right__form" action="">
-          <input class="right__input" type="text" placeholder="ваше имя">
-          <input class="right__input" type="text" placeholder="телефон">
-          <input class="right__input" type="text" placeholder="email">
-          <button class="right__button">отправить</button>
-          <p class="right__smallText">Подписываясь на рассылку, Вы соглашаетесь c условиями политики конфиденциальности.</p>
+            <label for="" class="inputWithArrow right__label">
+                <input type="text" class="right__input" placeholder="введите код" value="4567">
+                <svg class="inputWithArrow__arrow" width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 10L5 5.5L1 1" stroke="#5B5B5B"/>
+                </svg>
+              </label>
+          <p class="right__smallText">Отправить код повторно, через 52 сек.</p>
         </form>
       </div>
     </div>
