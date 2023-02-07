@@ -499,7 +499,7 @@ input::placeholder
 .header__catalog
 {
     position: absolute;
-    top: 120px;
+    top: 116px;
     left: 0;
     z-index: 2;
 
@@ -612,7 +612,7 @@ input::placeholder
 
 .header__search{
     position: absolute;
-    top: 120px;
+    top: 116px;
     left: 0;
     z-index: 2;
 
@@ -795,7 +795,8 @@ input::placeholder
 .catalogBlock__hr
 {
     margin-bottom: 10px;
-
+    border: 0;
+    height: 1px;
     background: #5b5b5b;
 }
 .catalogBlock__line
@@ -934,6 +935,15 @@ input::placeholder
 {
     margin-bottom: 200px;
 }
+.block.proc{
+    margin-top: 65px;
+}
+.block.proc .block__right{
+    margin-top: 44px;
+}
+.block.start .block__right{
+    align-items: start;
+}
 .block.grey
 {
     padding-top: 65px;
@@ -990,10 +1000,10 @@ input::placeholder
 }
 .block__hr
 {
-    margin: 0;
-    margin-bottom: 94px;
-
+    margin-bottom: 10px;
     background: #5b5b5b;
+    height: 1px;
+    border: 0;
 }
 .block__checkAll
 {
@@ -1004,6 +1014,8 @@ input::placeholder
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+
+    margin-top: 66px;
 }
 .block__checkAll:hover .block__checkAll-arrow
 {
@@ -1048,8 +1060,7 @@ input::placeholder
 
     width: 100%;
 
-    -ms-flex-item-align: start;
-    align-self: flex-start;
+    align-items: end;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
@@ -1061,10 +1072,11 @@ input::placeholder
 }
 .block__desc
 {
-    font-size: 14px;
+    font-size: 17px;
     line-height: 21px;
 
     color: #5b5b5b;
+    text-align: justify;
 }
 .block__button
 {
@@ -1191,7 +1203,7 @@ input::placeholder
 .block__grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 117px 50px;
+    gap: 50px;
 }
 
 .block__item{
