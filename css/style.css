@@ -524,6 +524,11 @@ input::placeholder
 {
     padding-left: 382px;
 }
+.header__catalog-inner .inputWithArrow{
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
 .header__catalog-select
 {
     font-size: 17px;
@@ -713,8 +718,7 @@ input::placeholder
     padding: 0;
     padding-bottom: 5px;
     border-bottom: 1px solid #5B5B5B;
-    max-width: 300px;
-    width: 100%;
+    width: 300px;
 }
 
 .header__search-input::placeholder{
