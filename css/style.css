@@ -2434,6 +2434,11 @@ letter-spacing: 0em;
 }
 
 /* Адаптация */
+@media(max-width: 1440px){
+    .main.index .block__right > * {
+        max-width: 418px !important;
+    }
+}
 @media (max-width: 1280px)
 {
     .container
