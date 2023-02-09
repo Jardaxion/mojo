@@ -46,17 +46,20 @@ $(document).ready(function() {
 
     $('.js-open-catalog').hover(() => onMenu('.header__catalog', '.header__search'))
     $('.header__catalog').hover(() => 0, () => offMenu('.header__catalog', '.header__search'))
-    $('.header__link:not(.js-open-catalog)').hover(() => offMenu('.header__catalog'));
 
     $('.js-open-search').hover(() => onMenu('.header__search', '.header__catalog'))
     $('.header__search').hover(() => 0, () => offMenu('.header__search', '.header__catalog'))
-    $('.header__link:not(.js-open-search)').hover(() => offMenu('.header__search'));
+    $('.header__item:not(.js-open)').hover(() => {
+        offMenu('.header__search'); 
+        offMenu('.header__catalog');
+    });
 })
 
 let onMenu = (className, secondClassName) => {
     if($('.header').hasClass('abs')){
         $('.header').addClass('grey');
     }
+
 
     $(secondClassName).fadeOut();
 
@@ -67,6 +70,7 @@ let offMenu = (className, secondClassName) => {
     if($('.header').hasClass('abs')){
         $('.header').removeClass('grey');
     }
+
 
     $(secondClassName).fadeOut();
 

@@ -232,7 +232,6 @@ body
 .block__right > *{
     max-width: 700px !important;
 }
-
 main
 {
     min-height: 46.4vh;
@@ -517,13 +516,13 @@ input::placeholder
     width: 100%;
     min-height: 75vh;
 
-    background: white;
+    background: #FBF9F7;
 
     display: none;
 }
 .header__catalog-inner
 {
-    padding-left: 130px;
+    padding-left: 382px;
 }
 .header__catalog-select
 {
@@ -595,7 +594,7 @@ input::placeholder
 }
 
 .header__column-page{
-    max-width: 250px;
+    max-width: 400px;
     width: 100%;
 }
 
@@ -607,6 +606,10 @@ input::placeholder
     line-height: 14px;
     font-style: italic;
     width: 100%;
+}
+
+.header__desc.und{
+    text-decoration: underline;
 }
 
 .header__catalog-content{
@@ -630,7 +633,7 @@ input::placeholder
     width: 100%;
     min-height: 75vh;
 
-    background: white;
+    background: #FBF9F7;
 
     display: none;
 }
@@ -720,7 +723,7 @@ input::placeholder
 
 .header.grey
 {
-    background: white;
+    background: #FBF9F7;
 }
 .header.grey .header__logo path
 {
@@ -797,6 +800,12 @@ input::placeholder
 }
 .block__catalog-item:hover .catalogBlock__img:last-of-type{
     opacity: 1;
+}
+.block__img.present{
+    margin-bottom: 40px !important;
+}
+.block__img.brand{
+    margin-bottom: 50px !important;
 }
 .catalogBlock__title
 {
@@ -930,7 +939,7 @@ input::placeholder
 /* Заголовок */
 .hello
 {
-    padding-top: 70px;
+    padding-top: 130px;
     padding-bottom: 128px;
 }
 .hello.grey{
@@ -956,6 +965,9 @@ input::placeholder
 .block__right.noMax > *{
     max-width: none !important;
 }
+.block__right.leftJCS{
+    align-items: start;
+}
 .block.proc{
     margin-top: 65px;
 }
@@ -973,6 +985,14 @@ input::placeholder
     margin-bottom: 0;
 
     background: #f6f4f2;
+}
+.block.whiteGrey{
+    padding-top: 65px;
+    padding-bottom: 67px;
+
+    margin-bottom: 0;
+
+    background: #FBF9F7;
 }
 .block__inner
 {
@@ -1009,6 +1029,9 @@ input::placeholder
 {
     width: 100%;
     max-width: 350px;
+}
+.block__center.big{
+    max-width: 534px;
 }
 .block__title
 {
@@ -1072,6 +1095,9 @@ input::placeholder
 }
 .block__right > *:not(:last-child){
     margin-bottom: 130px;
+}
+.block__right.gift > *{
+    margin-bottom: 60px;
 }
 .block__right
 {
@@ -1171,6 +1197,16 @@ input::placeholder
     max-width: 550px !important;
 }
 
+.block__form-title{
+    font-family: Arial;
+font-size: 17px;
+font-weight: 400;
+line-height: 21px;
+text-align: justified;
+margin-bottom: 100px;
+color: #5B5B5B;
+}
+
 .block__input{
     color:#5B5B5B80;
     border: 0;
@@ -1237,6 +1273,7 @@ input::placeholder
 
 .block__item-right{
     margin-left: 30px;
+    min-height: 157px;
 }
 
 .block__item-right p{
@@ -1244,11 +1281,11 @@ input::placeholder
     font-weight: 400;
     line-height: 21px;
     color: #5B5B5B;
-    max-width: 316px;
+    max-width: 400px;
 }
 
 .block__item-right--title{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-transform: lowercase;
 }
 
@@ -1337,6 +1374,10 @@ input::placeholder
     line-height: 25px;
 
     color: #5b5b5b;
+}
+
+body{
+    background: #FBF9F7;
 }
 
 body.noScroll
@@ -1664,7 +1705,7 @@ body.noScroll
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    height: 100%;
 }
 .left__logo
 {
@@ -1674,7 +1715,7 @@ body.noScroll
 }
 .left__background
 {
-    width: 100%;
+    height: 100%;
 }
 
 .right
@@ -1835,6 +1876,8 @@ body.noScroll
     color: white;
     background: #5b5b5b;
     transition: .3s ease all;
+
+    font-size: 17px;
 }
 .right__button:hover{
     background: #A89583;
@@ -2090,6 +2133,7 @@ body.noScroll
     line-height: 22px;
     letter-spacing: 0em;
     text-align: center;
+    color: #5B5B5B;
 }
 
 .basket__item-count--textCount{
@@ -2217,7 +2261,7 @@ letter-spacing: 0em;
 
 .basket__checkbox-line{
     display: flex;
-    align-items: start;
+    align-items: center;
     margin-bottom: 34px;
 }
 
@@ -2234,11 +2278,10 @@ letter-spacing: 0em;
 .basket__checkbox-label::after{
     content: '';
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 3px;
+    left: 4px;
     width: 8px;
-    height: 8px;
+    height: 9px;
     border-radius: 50%;
     background: #5B5B5B;
     display: none;
@@ -2392,6 +2435,15 @@ letter-spacing: 0em;
     .container
     {
         padding: 20px;
+    }
+
+    .header__catalog-inner{
+        padding-left: 332px;
+    }
+
+    .header__catalog,
+    .header__search{
+        top: 113px;
     }
 }
 
