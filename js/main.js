@@ -40,39 +40,50 @@ $(document).ready(function() {
         $('.js-open-select.active').removeClass('active');
         $(this).addClass('active');
 
+        $('.header__menu').removeClass('catalogActiveMini');
+        $('.header__menu').addClass('catalogActive');
+
         $('.header__column-selected.active').removeClass('active');
         $('.header__column-selected[data-select="' + $(this).data('select') + '"]').addClass('active');
     })
 
-    $('.js-open-catalog').hover(() => onMenu('.header__catalog', '.header__search'))
+    $('.js-open-catalog').hover(() => onMenu('.header__catalog', '.header__search', 371))
     $('.header__catalog').hover(() => 0, () => offMenu('.header__catalog', '.header__search'))
 
-    $('.js-open-search').hover(() => onMenu('.header__search', '.header__catalog'))
+    $('.js-open-search').hover(() => onMenu('.header__search', '.header__catalog', 400))
     $('.header__search').hover(() => 0, () => offMenu('.header__search', '.header__catalog'))
-    $('.header__item:not(.js-open)').hover(() => {
-        offMenu('.header__search'); 
-        offMenu('.header__catalog');
-    });
 })
 
-let onMenu = (className, secondClassName) => {
+let onMenu = (className, secondClassName, height) => {
     if($('.header').hasClass('abs')){
         $('.header').addClass('grey');
     }
 
-
-    $(secondClassName).fadeOut();
-
-    $(className).fadeIn();
+    $(secondClassName).removeClass('active');
+    $(className).addClass('active');
+    if(className == '.header__search'){
+        $('.header__menu').addClass('searchActive');
+    } else {
+        if($('.header__catalog .header__column-page:last-of-type .header__column:first-of-type').hasClass('active')){
+            $('.header__menu').addClass('catalogActiveMini');
+        } else {
+            $('.header__menu').addClass('catalogActive');
+        }
+    }
 }
 
-let offMenu = (className, secondClassName) => {
+let offMenu = (className, secondClassName, height) => {
     if($('.header').hasClass('abs')){
         $('.header').removeClass('grey');
     }
 
-
-    $(secondClassName).fadeOut();
-
-    $(className).fadeOut();
+    $(className).removeClass('active');
+    $(secondClassName).removeClass('active');
+        $('.header__menu').removeClass('searchActive');
+        $('.header__menu').removeClass('catalogActive');
+        $('.header__menu').removeClass('catalogActiveMini');
+    // $('.header__menu').animate({
+    //     height: 0,
+    //     display: 'none'
+    // });
 }
