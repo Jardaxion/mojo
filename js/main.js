@@ -1,6 +1,9 @@
 $(document).ready(function() {
     let slider = new Swiper('.slider', {
         autoplay: true,
+        autoplay: {
+            delay: 5000,
+        },
         navigation: {
             nextEl: '.slider__rightArrow',
             prevEl: '.slider__leftArrow'
