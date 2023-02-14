@@ -553,7 +553,7 @@ input::placeholder
 }
 .header__catalog.active .header__column-selected{
     position: absolute;
-    display: block;
+    display: flex;
 }
 .header__catalog.active .header__column:not(.header__column-selected) a{
     transform: translateX(0);
